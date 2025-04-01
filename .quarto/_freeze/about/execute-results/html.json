@@ -1,0 +1,15 @@
+{
+  "hash": "61f7ccf56bbf89331d117db5c43b91bd",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Marcus G. Wild\"\nsubtitle: \"Ph.D. Clinical Psychology\"\nimage: Headshot1.jpg\nabout:\n  template: jolla\n---\n\n\n\n\n## Background\n\nI am a researcher at the Department of Veterans Affairs. I obtained my doctorate in clinical psychology from [Vanderbilt University](https://as.vanderbilt.edu/psychology/) in 2022. \n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

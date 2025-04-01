@@ -1,0 +1,363 @@
+---
+title: "Quarto Website Outline"
+format: html
+---
+
+## Example website
+
+I have an example website up here: https://solomon.quarto.pub/website/blog.html
+
+The GitHub repo for that website is here: https://github.com/ASKurz/my_quarto_website
+
+## Online instructions
+
+Go to https://quarto.org/docs/websites/ for instructions on how to make a quarto website.
+
+Once you're on the website, scroll down to the [Quick Start](https://quarto.org/docs/websites/#quick-start) section and click on the RStudio button. You will be making a website within RStudio.
+
+## New RStudio project
+
+You are going to make your website with an "RStudio project" following these steps:
+
+* Click on the File drop down.
+* Click on the "New Project" option.
+* Click on the "New Directory" option on the pop-up window.
+* Click either the "Quarto Website" or "Quarto Blog" options in the "Project Type" pop-up window.
+* Now:
+  - give your project a name in the "Directory name:" text field, 
+  - select the file directory, and 
+  - click the "Create Project" button
+* A new RStudio Project will open. To see your default settings, 
+   - click the "Render" button near the middle of the top of the screen. 
+   - Then view your new website with its default settings.
+
+Congratulations; You have a website!
+
+## Top-level index file
+
+Notice the open `index.qmd` file.
+* This file controls the settings in your websites landing page
+* Customize the settings in the yaml.
+  - Change the `title` to perhaps your name.
+  - Maybe add a `subtitle`, such as your position.
+  - Mine look like this:
+  
+```default
+---
+title: "A. Solomon Kurz"
+subtitle: "Psychologist"
+image: pears.jpg
+about:
+  template: marquee
+---
+```
+
+You can learn more about the `template` settings here: https://quarto.org/docs/websites/website-about.html#templates
+
+* Add a couple sentences to describe who you are, or maybe just a "welcome" message.
+* Then save your changes and click the "Render" button to see the changes to the website.
+
+## Config File
+
+* Open the `_quarto.yml` file.
+* Customize some of the settings based on tips from [here](https://quarto.org/docs/websites/#config-file)
+* For information on `theme` options: https://quarto.org/docs/output-formats/html-themes.html
+
+## GitHub!
+
+### Start a fresh repository
+
+* Go to https://github.com/ and log in.
+* Click the green "New" button on the upper left side of the screen.
+* Fill in the "Repository name*" text field with something like "website."
+* Click the green "Create repository" button at the bottom right.
+* Leave this page open--we'll come back in a bit.
+
+### Connect your R Project to GitHub
+
+You can find extensive instructions about GitHub with the free ebook [Happy Git and GitHub for the useR](https://happygitwithr.com/).
+
+Navigate to [Chapter 17](https://happygitwithr.com/existing-github-last).
+
+In the next few sections, I will be shamelessly copying and pasting from the ebook.
+
+#### 17.1.2 Make or verify a Git repo
+
+Navigate to Section 17.1.2.
+
+* In RStudio, go to *Tools > Project Options … > Git/SVN*. Under "Version control system", select "Git". Confirm New Git Repository? Yes!
+* You may have to agree to restarting RStudio.
+
+#### 17.2 Stage and commit
+
+Navigate to Section 17.2.
+
+* Click the "Git" tab in upper right pane.
+* Check "Staged" box for all files you want to commit.
+   - Default: stage everything
+* If you're not already in the Git pop-up, click "Commit".
+* Type a message in "Commit message".
+  - Something simple like "first upload" or "initial commit"
+* Click "Commit".
+* Click "Close" on the pop-up.
+
+#### 17.3.2 Create and connect a GitHub repo without usethis
+
+Navigate to Section 17.3.2.
+
+* Go back to the GitHub tab from earlier. 
+* In the blue box, copy the url.
+
+#### 17.3.2.1 Connect local repo to GitHub repo with RStudio
+
+Navigate to Section 17.3.2.1.
+
+* Click on the "two purple boxes and a white square" in the Git pane. 
+* Click "Add remote". 
+* Paste the GitHub repo's URL here and pick a remote name, almost certainly `origin`. 
+* Now "Add".
+
+We should be back in the "New Branch" dialog (if not, click on the "two purple boxes and a white square" in the Git pane again). I assume you're on the `main` branch and want it to track main on GitHub (or whatever default branch you are using). 
+
+* Enter `main` as the branch name and make sure "Sync branch with remote" is checked. 
+* Click "Create" (yes, even though the branch already exists). 
+* In the next dialog, choose "overwrite".
+
+Now if you go back to your GitHub tab online, you'll see your files have been uploaded. This is where they will be stored on the web.
+
+If this is your first time uploading a file to GitHub, congratulations!
+
+#### Add a README
+
+* In your GitHub repo, click the green "Add a README" button.
+* Enter in some simple text like: "Welcome to the repo for my website."
+* Click the green "Commit changes..." button on the right of the screen.
+* In the pop-up, click the green "Commit changes" button.
+
+#### Pull
+
+* Back in your RStudio, click Pull in the Git pane.
+* Click the "Close" button on the pop-up.
+* In the Files tab, notice you now have a `README.md` file.
+
+## Customize
+
+### About
+
+Navigate to https://quarto.org/docs/websites/website-about.html
+
+* Change the `title` to your name.
+* Add a `subtitle`?
+* Try adding one of the five template options discussed: https://quarto.org/docs/websites/website-about.html#templates
+* Add an `image` (probably a headshot saved as a `.png` or `.jpg` file).
+* Add a more detailed bio. This can include:
+  - a breakdown of your education
+  - training or professional highlights
+  - research and/or clinical interests
+  - hyperlinks to schools, employers, or other important organizations
+* Maybe add links to your Twitter, GitHub, linkedin...
+
+### CV
+
+* Save a copy of your CV (I recommend as a `.pdf` file) in your working directory.
+* In the `_quarto.yml` file, add a new section in the `navbar`. Mine looks like this:
+
+```default
+---
+website:
+  title: "A. Solomon Kurz"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: Kurz_CV.pdf
+        text: CV        
+---
+```
+
+Here are some examples of other ways people have found to list their CVs:
+
+* https://peder.quarto.pub/blog/cv.html
+* https://matthewbjane.github.io/CV.html
+* https://ehud.co/cv/
+* https://follhim.github.io/research.html
+* https://juan-torresmunguia.netlify.app/cv/
+* https://www.erinbugbee.com/cv/EBugbee_CV.pdf
+
+## Publish
+
+There are many ways to publish your website. We'll be using Quarto Pub.
+
+### Quarto Pub
+
+For instructions, navigate to https://quarto.org/docs/publishing/quarto-pub.html
+
+* In the Terminal, execute `quarto publish`
+   - You may have to hit "Return" a couple times
+* If you haven’t published to Quarto Pub before, the publish command will prompt you to authenticate. After confirming that you want to publish, your content will be rendered and deployed, and then a browser opened to view your site.
+* This process will make a new `_publish.yml` file. 
+  - Leave that file alone.
+
+#### Update the URL
+
+Go to https://quartopub.com/ and sign in.
+
+* Click on your website (probably upper left box)
+* Change the text in the "Slug" field.
+* Click the green "Save" button.
+* Also consider checking the "Default site" box.
+   - For more: https://quarto.org/docs/publishing/quarto-pub.html#user-default-site
+
+### Netlify
+
+As an alternative to Quarto Pub, I have used Netlify for years. To learn more, go to https://quarto.org/docs/publishing/netlify.html
+
+## If we have time: Add a blog section
+
+### New folder
+
+* Create a new folder named something like `blog` or `posts`, and save this in the root directory. This is where your individual blog files will live.
+
+### Listing page
+
+Make a listing page, which will help list all your blog posts. Learn about listing pages at https://quarto.org/docs/websites/website-listings.html
+
+* In your root directory, open a new `.qmd` file and give it the same name as that new folder (e.g., `blog` or `posts`).
+* As a temporary step, add `listing: default` to the yaml. That might look like this:
+
+```default
+---
+title: "My blog"
+listing: default       
+---
+```
+
+* Now augment the `listing` settings. We want a few things:
+   - to link the contents of our new folder to the list
+   - to set the list type (`default`, `grid`, or `table`)
+
+```default
+---
+title: "My blog"
+listing: 
+  contents: blog
+  type: grid
+---
+```
+
+### Update navbar
+
+Now we want to add the new listing page to the website's navbar.
+
+* Open the `_quarto.yml` file.
+* Update the `navbar` section to something like so:
+
+```default
+---
+website:
+  title: "A. Solomon Kurz"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: blog.qmd
+        text: Blog        
+      - href: Kurz_CV.pdf
+        text: CV
+---
+```
+
+### Add a new blogpost
+
+* Make a new folder inside your `blog/` folder
+  - Consider naming it something like `YYYY-MM-DD-short-post-description`.
+  - In the new subdirectory, create an `index.qmd` file.
+    - This is the file for your blog post. Add content as desired.
+  - Add an image to the blog list by
+    - saving an image (e.g., a `.png` file) to the `YYYY-MM-DD-short-post-description` folder, and
+    - adding something like `image: my_image.png` to the yaml in the `index.qmd` file.
+    
+## Example websites
+
+Twitter thread: https://x.com/SolomonKurz/status/1902366400884195418
+Bluesky thread: https://bsky.app/profile/solomonkurz.bsky.social/post/3lkqfdfav7k2r
+
+Blog style:
+* https://ivelasq.rbind.io/
+* https://szlo.ai/
+* https://peder.quarto.pub/blog/
+
+Grad students:
+* https://dgerdesmann.de/
+* https://kostas-moschonas.github.io/website/
+* https://roald-arboel.com/
+* https://aymennasri.me/
+* https://www.erinbugbee.com/
+* https://matthewbjane.github.io/
+* https://follhim.github.io/home.html
+
+Old heads:
+* https://reluctantcriminologists.com/
+* https://ericnovik.github.io/
+* https://faruk-xia.quarto.pub/
+* https://jennybryan.org/
+* https://www.political-behavior.digital/
+
+Fancy: 
+* https://juan-torresmunguia.netlify.app/
+* https://ehud.co/
+* https://www.andrewheiss.com/
+* https://bayesically-speaking.com/
+* https://www.jvcasillas.com/blog.html
+
+Old-school blogdown:
+* https://solomonkurz.netlify.app/
+* https://www.apreshill.com/
+* https://www.mariumtapal.com/
+
+## More resources
+
+### R and RStudio
+
+To learn more about how to use R and RStudio more generally, I recommend the ebooks:
+
+* R for Data Science (https://r4ds.had.co.nz/)
+* R Programming for Data Science (https://bookdown.org/rdpeng/rprogdatascience/)
+
+### Markdown
+
+For more on how to use Markdown syntax to format the prose in your files:
+
+* A Markdown cheat sheet: https://www.markdownguide.org/cheat-sheet/
+* An entire ebook (confusingly also called "rmarkdown :: Cheatsheet"): https://rstudio.github.io/cheatsheets/html/rmarkdown.html
+
+### Quarto
+
+The primary resource for Quarto is https://quarto.org/docs/websites/ 
+
+You can find several blog posts on making websites with quarto, such as
+
+* https://marvinschmitt.com/blog/website-tutorial-quarto/
+* https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/
+* https://dgerdesmann.de/posts/3_Quarto-website/
+* https://ucsb-meds.github.io/creating-quarto-websites/
+* https://ddimmery.com/posts/quarto-website/
+
+There are also YouTube tutorials, such as:
+
+* https://youtu.be/l7r24gTEkEY?si=67zK83hWhDac5WBq
+* https://youtu.be/j2Ft-3Qv2O8?si=P60BDk9yItEzwqgu
+* https://www.youtube.com/live/xtSFXtDf4cM?si=2KYL_CKFfzLvSzkj
+
+### GitHub
+
+The best place to learn about GitHub is 
+
+* Happy Git and GitHub for the useR (https://happygitwithr.com/)
+
+In my experience, you do not need to become an expert in GitHub. Just learn the basics, and expand based on your personal needs.
+
