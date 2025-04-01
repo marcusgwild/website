@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Marcus G. Wild, PhD",
-    "section": "",
-    "text": "Thank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to to OSF projects and pre-registrations, and my CV.\n\n\nI am a clinical psychologist by training, specializing in behavioral medicine research and evidence-based interventions for pain and rehabilitation.\nGithub: https://github.com/marcusgwild?tab=repositories.\nOSF: https://osf.io/ufp93/.\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Marcus G. Wild",
@@ -14,17 +7,108 @@
     "text": "I am a researcher at the Department of Veterans Affairs. I obtained my doctorate in clinical psychology from Vanderbilt University in 2022.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Marcus G. Wild, PhD",
-    "section": "",
-    "text": "Thank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to to OSF projects and pre-registrations, and my CV.\n\n\nI am a clinical psychologist by training, specializing in behavioral medicine research and evidence-based interventions for pain and rehabilitation.\nGithub: https://github.com/marcusgwild?tab=repositories.\nOSF: https://osf.io/ufp93/.\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "Marcus G. Wild",
     "section": "",
     "text": "I am a researcher at the Department of Veterans Affairs. I obtained my doctorate in clinical psychology from Vanderbilt University in 2022.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Quarto Website Outline.html",
+    "href": "Quarto Website Outline.html",
+    "title": "Quarto Website Outline",
+    "section": "",
+    "text": "I have an example website up here: https://solomon.quarto.pub/website/blog.html\nThe GitHub repo for that website is here: https://github.com/ASKurz/my_quarto_website"
+  },
+  {
+    "objectID": "Quarto Website Outline.html#example-website",
+    "href": "Quarto Website Outline.html#example-website",
+    "title": "Quarto Website Outline",
+    "section": "",
+    "text": "I have an example website up here: https://solomon.quarto.pub/website/blog.html\nThe GitHub repo for that website is here: https://github.com/ASKurz/my_quarto_website"
+  },
+  {
+    "objectID": "Quarto Website Outline.html#online-instructions",
+    "href": "Quarto Website Outline.html#online-instructions",
+    "title": "Quarto Website Outline",
+    "section": "Online instructions",
+    "text": "Online instructions\nGo to https://quarto.org/docs/websites/ for instructions on how to make a quarto website.\nOnce you’re on the website, scroll down to the Quick Start section and click on the RStudio button. You will be making a website within RStudio."
+  },
+  {
+    "objectID": "Quarto Website Outline.html#new-rstudio-project",
+    "href": "Quarto Website Outline.html#new-rstudio-project",
+    "title": "Quarto Website Outline",
+    "section": "New RStudio project",
+    "text": "New RStudio project\nYou are going to make your website with an “RStudio project” following these steps:\n\nClick on the File drop down.\nClick on the “New Project” option.\nClick on the “New Directory” option on the pop-up window.\nClick either the “Quarto Website” or “Quarto Blog” options in the “Project Type” pop-up window.\nNow:\n\ngive your project a name in the “Directory name:” text field,\nselect the file directory, and\nclick the “Create Project” button\n\nA new RStudio Project will open. To see your default settings,\n\nclick the “Render” button near the middle of the top of the screen.\nThen view your new website with its default settings.\n\n\nCongratulations; You have a website!"
+  },
+  {
+    "objectID": "Quarto Website Outline.html#top-level-index-file",
+    "href": "Quarto Website Outline.html#top-level-index-file",
+    "title": "Quarto Website Outline",
+    "section": "Top-level index file",
+    "text": "Top-level index file\nNotice the open index.qmd file. * This file controls the settings in your websites landing page * Customize the settings in the yaml. - Change the title to perhaps your name. - Maybe add a subtitle, such as your position. - Mine look like this:\n---\ntitle: \"A. Solomon Kurz\"\nsubtitle: \"Psychologist\"\nimage: pears.jpg\nabout:\n  template: marquee\n---\nYou can learn more about the template settings here: https://quarto.org/docs/websites/website-about.html#templates\n\nAdd a couple sentences to describe who you are, or maybe just a “welcome” message.\nThen save your changes and click the “Render” button to see the changes to the website."
+  },
+  {
+    "objectID": "Quarto Website Outline.html#config-file",
+    "href": "Quarto Website Outline.html#config-file",
+    "title": "Quarto Website Outline",
+    "section": "Config File",
+    "text": "Config File\n\nOpen the _quarto.yml file.\nCustomize some of the settings based on tips from here\nFor information on theme options: https://quarto.org/docs/output-formats/html-themes.html"
+  },
+  {
+    "objectID": "Quarto Website Outline.html#github",
+    "href": "Quarto Website Outline.html#github",
+    "title": "Quarto Website Outline",
+    "section": "GitHub!",
+    "text": "GitHub!\n\nStart a fresh repository\n\nGo to https://github.com/ and log in.\nClick the green “New” button on the upper left side of the screen.\nFill in the “Repository name*” text field with something like “website.”\nClick the green “Create repository” button at the bottom right.\nLeave this page open–we’ll come back in a bit.\n\n\n\nConnect your R Project to GitHub\nYou can find extensive instructions about GitHub with the free ebook Happy Git and GitHub for the useR.\nNavigate to Chapter 17.\nIn the next few sections, I will be shamelessly copying and pasting from the ebook.\n\n17.1.2 Make or verify a Git repo\nNavigate to Section 17.1.2.\n\nIn RStudio, go to Tools &gt; Project Options … &gt; Git/SVN. Under “Version control system”, select “Git”. Confirm New Git Repository? Yes!\nYou may have to agree to restarting RStudio.\n\n\n\n17.2 Stage and commit\nNavigate to Section 17.2.\n\nClick the “Git” tab in upper right pane.\nCheck “Staged” box for all files you want to commit.\n\nDefault: stage everything\n\nIf you’re not already in the Git pop-up, click “Commit”.\nType a message in “Commit message”.\n\nSomething simple like “first upload” or “initial commit”\n\nClick “Commit”.\nClick “Close” on the pop-up.\n\n\n\n17.3.2 Create and connect a GitHub repo without usethis\nNavigate to Section 17.3.2.\n\nGo back to the GitHub tab from earlier.\nIn the blue box, copy the url.\n\n\n\n17.3.2.1 Connect local repo to GitHub repo with RStudio\nNavigate to Section 17.3.2.1.\n\nClick on the “two purple boxes and a white square” in the Git pane.\nClick “Add remote”.\nPaste the GitHub repo’s URL here and pick a remote name, almost certainly origin.\nNow “Add”.\n\nWe should be back in the “New Branch” dialog (if not, click on the “two purple boxes and a white square” in the Git pane again). I assume you’re on the main branch and want it to track main on GitHub (or whatever default branch you are using).\n\nEnter main as the branch name and make sure “Sync branch with remote” is checked.\nClick “Create” (yes, even though the branch already exists).\nIn the next dialog, choose “overwrite”.\n\nNow if you go back to your GitHub tab online, you’ll see your files have been uploaded. This is where they will be stored on the web.\nIf this is your first time uploading a file to GitHub, congratulations!\n\n\nAdd a README\n\nIn your GitHub repo, click the green “Add a README” button.\nEnter in some simple text like: “Welcome to the repo for my website.”\nClick the green “Commit changes…” button on the right of the screen.\nIn the pop-up, click the green “Commit changes” button.\n\n\n\nPull\n\nBack in your RStudio, click Pull in the Git pane.\nClick the “Close” button on the pop-up.\nIn the Files tab, notice you now have a README.md file."
+  },
+  {
+    "objectID": "Quarto Website Outline.html#customize",
+    "href": "Quarto Website Outline.html#customize",
+    "title": "Quarto Website Outline",
+    "section": "Customize",
+    "text": "Customize\n\nAbout\nNavigate to https://quarto.org/docs/websites/website-about.html\n\nChange the title to your name.\nAdd a subtitle?\nTry adding one of the five template options discussed: https://quarto.org/docs/websites/website-about.html#templates\nAdd an image (probably a headshot saved as a .png or .jpg file).\nAdd a more detailed bio. This can include:\n\na breakdown of your education\ntraining or professional highlights\nresearch and/or clinical interests\nhyperlinks to schools, employers, or other important organizations\n\nMaybe add links to your Twitter, GitHub, linkedin…\n\n\n\nCV\n\nSave a copy of your CV (I recommend as a .pdf file) in your working directory.\nIn the _quarto.yml file, add a new section in the navbar. Mine looks like this:\n\n---\nwebsite:\n  title: \"A. Solomon Kurz\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n      - href: Kurz_CV.pdf\n        text: CV        \n---\nHere are some examples of other ways people have found to list their CVs:\n\nhttps://peder.quarto.pub/blog/cv.html\nhttps://matthewbjane.github.io/CV.html\nhttps://ehud.co/cv/\nhttps://follhim.github.io/research.html\nhttps://juan-torresmunguia.netlify.app/cv/\nhttps://www.erinbugbee.com/cv/EBugbee_CV.pdf"
+  },
+  {
+    "objectID": "Quarto Website Outline.html#publish",
+    "href": "Quarto Website Outline.html#publish",
+    "title": "Quarto Website Outline",
+    "section": "Publish",
+    "text": "Publish\nThere are many ways to publish your website. We’ll be using Quarto Pub.\n\nQuarto Pub\nFor instructions, navigate to https://quarto.org/docs/publishing/quarto-pub.html\n\nIn the Terminal, execute quarto publish\n\nYou may have to hit “Return” a couple times\n\nIf you haven’t published to Quarto Pub before, the publish command will prompt you to authenticate. After confirming that you want to publish, your content will be rendered and deployed, and then a browser opened to view your site.\nThis process will make a new _publish.yml file.\n\nLeave that file alone.\n\n\n\nUpdate the URL\nGo to https://quartopub.com/ and sign in.\n\nClick on your website (probably upper left box)\nChange the text in the “Slug” field.\nClick the green “Save” button.\nAlso consider checking the “Default site” box.\n\nFor more: https://quarto.org/docs/publishing/quarto-pub.html#user-default-site\n\n\n\n\n\nNetlify\nAs an alternative to Quarto Pub, I have used Netlify for years. To learn more, go to https://quarto.org/docs/publishing/netlify.html"
+  },
+  {
+    "objectID": "Quarto Website Outline.html#if-we-have-time-add-a-blog-section",
+    "href": "Quarto Website Outline.html#if-we-have-time-add-a-blog-section",
+    "title": "Quarto Website Outline",
+    "section": "If we have time: Add a blog section",
+    "text": "If we have time: Add a blog section\n\nNew folder\n\nCreate a new folder named something like blog or posts, and save this in the root directory. This is where your individual blog files will live.\n\n\n\nListing page\nMake a listing page, which will help list all your blog posts. Learn about listing pages at https://quarto.org/docs/websites/website-listings.html\n\nIn your root directory, open a new .qmd file and give it the same name as that new folder (e.g., blog or posts).\nAs a temporary step, add listing: default to the yaml. That might look like this:\n\n---\ntitle: \"My blog\"\nlisting: default       \n---\n\nNow augment the listing settings. We want a few things:\n\nto link the contents of our new folder to the list\nto set the list type (default, grid, or table)\n\n\n---\ntitle: \"My blog\"\nlisting: \n  contents: blog\n  type: grid\n---\n\n\nUpdate navbar\nNow we want to add the new listing page to the website’s navbar.\n\nOpen the _quarto.yml file.\nUpdate the navbar section to something like so:\n\n---\nwebsite:\n  title: \"A. Solomon Kurz\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n      - href: blog.qmd\n        text: Blog        \n      - href: Kurz_CV.pdf\n        text: CV\n---\n\n\nAdd a new blogpost\n\nMake a new folder inside your blog/ folder\n\nConsider naming it something like YYYY-MM-DD-short-post-description.\nIn the new subdirectory, create an index.qmd file.\n\nThis is the file for your blog post. Add content as desired.\n\nAdd an image to the blog list by\n\nsaving an image (e.g., a .png file) to the YYYY-MM-DD-short-post-description folder, and\nadding something like image: my_image.png to the yaml in the index.qmd file."
+  },
+  {
+    "objectID": "Quarto Website Outline.html#example-websites",
+    "href": "Quarto Website Outline.html#example-websites",
+    "title": "Quarto Website Outline",
+    "section": "Example websites",
+    "text": "Example websites\nTwitter thread: https://x.com/SolomonKurz/status/1902366400884195418 Bluesky thread: https://bsky.app/profile/solomonkurz.bsky.social/post/3lkqfdfav7k2r\nBlog style: * https://ivelasq.rbind.io/ * https://szlo.ai/ * https://peder.quarto.pub/blog/\nGrad students: * https://dgerdesmann.de/ * https://kostas-moschonas.github.io/website/ * https://roald-arboel.com/ * https://aymennasri.me/ * https://www.erinbugbee.com/ * https://matthewbjane.github.io/ * https://follhim.github.io/home.html\nOld heads: * https://reluctantcriminologists.com/ * https://ericnovik.github.io/ * https://faruk-xia.quarto.pub/ * https://jennybryan.org/ * https://www.political-behavior.digital/\nFancy: * https://juan-torresmunguia.netlify.app/ * https://ehud.co/ * https://www.andrewheiss.com/ * https://bayesically-speaking.com/ * https://www.jvcasillas.com/blog.html\nOld-school blogdown: * https://solomonkurz.netlify.app/ * https://www.apreshill.com/ * https://www.mariumtapal.com/"
+  },
+  {
+    "objectID": "Quarto Website Outline.html#more-resources",
+    "href": "Quarto Website Outline.html#more-resources",
+    "title": "Quarto Website Outline",
+    "section": "More resources",
+    "text": "More resources\n\nR and RStudio\nTo learn more about how to use R and RStudio more generally, I recommend the ebooks:\n\nR for Data Science (https://r4ds.had.co.nz/)\nR Programming for Data Science (https://bookdown.org/rdpeng/rprogdatascience/)\n\n\n\nMarkdown\nFor more on how to use Markdown syntax to format the prose in your files:\n\nA Markdown cheat sheet: https://www.markdownguide.org/cheat-sheet/\nAn entire ebook (confusingly also called “rmarkdown :: Cheatsheet”): https://rstudio.github.io/cheatsheets/html/rmarkdown.html\n\n\n\nQuarto\nThe primary resource for Quarto is https://quarto.org/docs/websites/\nYou can find several blog posts on making websites with quarto, such as\n\nhttps://marvinschmitt.com/blog/website-tutorial-quarto/\nhttps://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/\nhttps://dgerdesmann.de/posts/3_Quarto-website/\nhttps://ucsb-meds.github.io/creating-quarto-websites/\nhttps://ddimmery.com/posts/quarto-website/\n\nThere are also YouTube tutorials, such as:\n\nhttps://youtu.be/l7r24gTEkEY?si=67zK83hWhDac5WBq\nhttps://youtu.be/j2Ft-3Qv2O8?si=P60BDk9yItEzwqgu\nhttps://www.youtube.com/live/xtSFXtDf4cM?si=2KYL_CKFfzLvSzkj\n\n\n\nGitHub\nThe best place to learn about GitHub is\n\nHappy Git and GitHub for the useR (https://happygitwithr.com/)\n\nIn my experience, you do not need to become an expert in GitHub. Just learn the basics, and expand based on your personal needs."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Marcus G. Wild, PhD",
+    "section": "",
+    "text": "Thank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to to OSF projects and pre-registrations, and my CV.\n\n\nI am a clinical psychologist by training, specializing in behavioral medicine research and evidence-based interventions for pain and rehabilitation.\nGithub: https://github.com/marcusgwild?tab=repositories.\nOSF: https://osf.io/ufp93/.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Marcus G. Wild, PhD",
+    "section": "",
+    "text": "Thank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to to OSF projects and pre-registrations, and my CV.\n\n\nI am a clinical psychologist by training, specializing in behavioral medicine research and evidence-based interventions for pain and rehabilitation.\nGithub: https://github.com/marcusgwild?tab=repositories.\nOSF: https://osf.io/ufp93/.\n\n1 + 1\n\n[1] 2"
   }
 ]

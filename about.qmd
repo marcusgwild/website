@@ -11,5 +11,10 @@ about:
 I am a researcher at the Department of Veterans Affairs. I obtained my doctorate in clinical psychology from [Vanderbilt University](https://as.vanderbilt.edu/psychology/) in 2022. 
 
 ```{r}
+
+```
+
+
+```{r}
 1 + 1
 ```

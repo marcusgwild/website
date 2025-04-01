@@ -1,8 +1,8 @@
 {
-  "hash": "43f9e367a4eeab019e795e852adda8e9",
+  "hash": "99c96483669e1894e676d5067f5ec0a2",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Marcus G. Wild, PhD\"\nsubtitle: \"Researcher and Clinical Psychologist\"\nimage: Headshot1.jpg\nabout:\n  template: marquee\n---\n\n\n\n## Welcome!\nThank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to to OSF projects and pre-registrations, and my CV.\n\n### Brief Bio\nI am a clinical psychologist by training, specializing in behavioral medicine research and evidence-based interventions for pain and rehabilitation. \n\nGithub: <https://github.com/marcusgwild?tab=repositories>.  \nOSF: <https://osf.io/ufp93/>.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Marcus G. Wild, PhD\"\nsubtitle: \"Researcher and Clinical Psychologist\"\nimage: coe.jpeg\nabout:\n  template: marquee\n---\n\n\n\n\n## Welcome!\nThank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to to OSF projects and pre-registrations, and my CV.\n\n### Brief Bio\nI am a clinical psychologist by training, specializing in behavioral medicine research and evidence-based interventions for pain and rehabilitation. \n\nGithub: <https://github.com/marcusgwild?tab=repositories>.  \nOSF: <https://osf.io/ufp93/>.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 7a525398-bfc2-4165-9bb1-d4b14698abfc
+      url: 'https://marcusgwild.quarto.pub/website'
