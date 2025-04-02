@@ -1,0 +1,16 @@
+---
+title: "Current Projects"
+image: ghiblibrain.jpeg
+about:
+  template: trestles
+---
+
+## Chronic pain in US Veterans and Servicemembers
+
+
+
+## Psychosocial outcomes in adults with Chronic Kidney Disease
+
+
+
+## Person-level models of psychopathology

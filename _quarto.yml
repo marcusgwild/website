@@ -11,7 +11,8 @@ website:
         text: About
       - href: Wild CV March 2025.pdf
         text: CV
-
+      - href: projects.qmd
+        text: Current Projects
 format:
   html:
     theme: cosmo
