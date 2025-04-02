@@ -7,7 +7,7 @@ about:
 ---
 
 ## Welcome!
-Thank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to to OSF projects and pre-registrations, and my CV.
+Thank you for visiting my website. Here you will find more information about my current research, including ongoing projects, links to OSF projects and pre-registrations, and my CV.
 
 ### Brief Bio
 I am a clinical psychologist by training, specializing in behavioral medicine research and evidence-based interventions for pain and rehabilitation. 
@@ -16,5 +16,5 @@ Github: <https://github.com/marcusgwild?tab=repositories>.
 OSF: <https://osf.io/ufp93/>.
 
 ```{r}
-1 + 1
+
 ```

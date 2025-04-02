@@ -15,6 +15,3 @@ I am a researcher at the Department of Veterans Affairs. I obtained my doctorate
 ```
 
 
-```{r}
-1 + 1
-```
